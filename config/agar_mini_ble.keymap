@@ -14,8 +14,9 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "BASE";
             bindings = <
-&kp ESCAPE &kp Q      &kp W     &kp E  &kp R        &kp T  &kp Y      &kp U  &kp I      &kp O           &kp P                &mt BSPC          &kp BSPC
+&kp ESCAPE &kp Q      &kp W     &kp E  &kp R        &kp T  &kp Y      &kp U  &kp I      &kp O           &kp P                &mt DEL           &kp BSPC
 &kp TAB    &kp A      &kp S     &kp D  &kp F        &kp G  &kp H      &kp J  &kp K      &kp L           &kp SEMI             &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C  &kp V        &kp B  &kp N      &kp M  &kp COMMA  &kp DOT         &kp SLASH            &mt LSHIFT LANG2
            &kp LALT   &kp LGUI         &lt 1 SPACE         &lt 2 ENTER                  &kp LGUI        &kp LCTRL
@@ -23,20 +24,22 @@
         };
 
         layer1 {
+            display-name = "ARROW";
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3          &kp N4          &kp N5           &kp N6            &kp N7             &kp N8  &kp N9     &kp N0            &kp MINUS  &kp EQUAL
-&trans     &trans  &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans     &kp SINGLE_QUOTE  &trans
-&trans     &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &trans             &trans  &kp SLASH  &trans            &trans
-           &trans  &trans                  &trans                           &trans                                       &trans     &trans
+&trans      &none           &kp HOME    &kp UP       &kp END      &none     &none     &kp LG(LC(N3))   &kp LG(LC(N4))  &kp LG(LC(N5)) &none        &kp C_VOL_DN  &kp C_VOL_UP
+&trans      &none           &kp LEFT    &kp DOWN     &kp RIGHT    &none     &none     &kp LG(EQUAL)    &kp(MINUS)      &none          &none        &kp C_MUTE
+&trans      &kp LG(Z)       &kp LG(X)   &kp LG(C)    &kp LG(V)    &none     &none     &none            &none           &none          &bt BT_SEL 1 &bootloader
+            &kp LG(LS(Z))   &trans                   &mo 1                  &kp LSHIFT                 &kp LALT        &kp LCTRL
             >;
         };
 
         layer2 {
+            display-name = "NSYMBOL";
             bindings = <
-&kp CAPSLOCK  &kp PRINTSCREEN  &kp PAGE_UP     &kp HOME  &kp F2     &trans  &trans  &trans  &kp INSERT  &trans    &trans     &trans  &trans
-&trans        &kp DELETE       &kp PAGE_DOWN   &kp END   &kp F2     &trans  &trans  &trans  &trans      &trans    &trans     &trans
-&trans        &kp PAUSE_BREAK  &kp SCROLLLOCK  &kp F4    &kp LG(V)  &trans  &trans  &trans  &trans      &kp RGUI  &trans     &trans
-              &trans           &trans                    &trans             &trans                      &kp RALT  &kp RCTRL
+&trans        &kp EXCL         &kp AT          &kp HASH      &kp DLLR       &kp PRCNT    &kp CARET    &kp AMPS         &kp STAR    &kp LPAR    &kp RPAR    &trans    &trans
+&trans        &kp N1           &kp N2          &kp N3        &kp N4         &kp N5       &kp GRAVE    &kp MINUS        &kp EQUAL   &kp LBKT    &kp RBKT    &kp BSLH
+&kp CAPSLOCK  &kp N6           &kp N7          &kp N8        &kp N9         &kp N0       &kp TILDE    &kp UNDERSCORE   &kp PLUS    &kp LBRC    &kp RBRC    &kp PIPE
+              &trans           &trans                    &trans             &mo 2                     &trans           &trans
             >;
         };
 
