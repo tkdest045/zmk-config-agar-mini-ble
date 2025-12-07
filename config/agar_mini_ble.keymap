@@ -213,7 +213,7 @@
 &trans      &none           &kp HOME    &kp UP       &kp END      &none     &none     &kp LG(LC(N3))   &kp LG(LC(N4))  &kp LG(LC(N5)) &none        &kp C_VOL_DN  &kp C_VOL_UP
 &trans      &none           &kp LEFT    &kp DOWN     &kp RIGHT    &none     &none     &kp LG(EQUAL)    &kp LG(MINUS)      &none          &none        &kp C_MUTE
 &trans      &kp LG(Z)       &kp LG(X)   &kp LG(C)    &kp LG(V)    &none     &none     &none            &none           &none          &bt BT_SEL 1 &bootloader
-            &kp LG(LS(Z))   &trans                   &mo 1                  &kp LSHIFT                 &kp LALT        &kp LCTRL
+            &kp LG(LS(Z))   &trans                   &mo 1                  &kp LSHFT                 &kp LALT        &kp LCTRL
             >;
         };
 
