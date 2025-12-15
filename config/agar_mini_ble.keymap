@@ -27,7 +27,7 @@
 
         backspace {
             bindings = <&kp BSPC>;
-            key-positions = <8 9>;
+            key-positions = <11 12>;
             layers = <0 3>;
         };
 
@@ -81,7 +81,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <15 16>;
+            key-positions = <19 20>;
             layers = <0>;
         };
 
