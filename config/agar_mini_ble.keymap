@@ -32,20 +32,20 @@
         };
 
         BT_0 {
-            bindings = <&bt SEL 0>;
+            bindings = <&bt BT_SEL 0>;
             key-positions = <0 36>;
             layers = <1 2>;
         };
 
         BT_1 {
-            bindings = <&bt SEL 1>;
+            bindings = <&bt BT_SEL 1>;
             key-positions = <13 36>;
             layers = <1 2>;
         };
 
 
         BT_2 {
-            bindings = <&bt SEL 2>;
+            bindings = <&bt BT_SEL 2>;
             key-positions = <25 36>;
             layers = <1 2>;
         };
