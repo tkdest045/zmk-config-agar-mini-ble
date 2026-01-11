@@ -28,13 +28,13 @@
         bootloader {
             bindings = <&bootloader>;
             key-positions = <0 36>;
-            layers = <1>;
+            layers = <1 2>;
         };
 
         BT_0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <13 36>;
-            layers = <1>;
+            layers = <1 2>;
         };
 
         BT_1 {
@@ -43,21 +43,9 @@
             layers = <1 2>;
         };
 
-        mute {
-            bindings = <&kp C_MUTE>;
-            key-positions = <11 12>;
-            layers = <1>;
-        };
-
-        gui_space {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <39 40>;
-            layers = <0>;
-        };
-
         n0_combo {
             bindings = <&kp N0>;
-            key-positions = <37 38>;
+            key-positions = <25 26>;
             layers = <0>;
         };
 
@@ -132,19 +120,19 @@
         layer1 {
             display-name = "ARROW";
             bindings = <
-&trans      &none           &kp HOME        &kp UP          &kp END          &none     &none     &none            &none          &none          &none   &kp C_VOL_DN  &kp C_VOL_UP
-&trans      &none           &kp LEFT        &kp DOWN        &kp RIGHT        &none     &none     &kp LG(MINUS)    &kp LG(EQUAL)  &kp LG(GRAVE)  &none   &kp C_MUTE
-&trans      &none           &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(LS(N5))   &none     &none     &kp LS(LC(TAB))  &kp LC(TAB)    &none          &none   &none
-            &trans          &trans          &mo 1                 &mt LSHFT LG(SPACE)            &trans         &trans
+&trans      &none           &kp HOME        &kp UP          &kp END          &none     &none     &kp C_VOL_DN     &kp C_VOL_UP   &kp C_MUTE     &none     &none    &none
+&trans      &none           &kp LEFT        &kp DOWN        &kp RIGHT        &none     &none     &kp LSHFT        &kp LGUI       &kp LALT       &LCTRL    &none
+&trans      &none           &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(LS(N5))   &none     &none     &kp LG(MINUS)    &kp LG(EQUAL)  &none          &none     &none
+            &trans          &trans          &mo 1                 &kp LG(SPACE)            &trans         &trans
             >;
         };
 
         layer2 {
             display-name = "NSYMBOL";
             bindings = <
-&trans        &kp EXCL         &kp AT          &kp HASH      &kp DLLR       &kp PRCNT    &kp CARET    &kp AMPS         &kp STAR    &kp LPAR    &kp RPAR    &trans    &trans
-&trans        &kp N1           &kp N2          &kp N3        &kp N4         &kp N5       &kp GRAVE    &kp MINUS        &kp EQUAL   &kp LBKT    &kp RBKT    &kp LS(ENTER)
-&kp CAPSLOCK  &kp N6           &kp N7          &kp N8        &kp N9         &kp N0       &kp TILDE    &kp UNDERSCORE   &kp PLUS    &kp LBRC    &kp RBRC    &kp LA(ENTER)
+&kp GRAVE     &kp EXCL         &kp AT          &kp HASH      &kp DLLR       &kp PRCNT    &kp CARET    &kp AMPS         &kp STAR    &kp LPAR    &kp RPAR    &trans    &trans
+&kp TILDE     &kp N1           &kp N2          &kp N3        &kp N4         &kp N5       &none        &kp MINUS        &kp EQUAL   &kp LBKT    &kp RBKT    &kp LS(ENTER)
+&kp CAPSLOCK  &kp N6           &kp N7          &kp N8        &kp N9         &kp N0       &none        &kp UNDERSCORE   &kp PLUS    &kp LBRC    &kp RBRC    &kp LA(ENTER)
               &trans           &trans                    &kp SPACE          &mo 2                     &trans           &trans
             >;
         };
