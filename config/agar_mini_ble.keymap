@@ -120,9 +120,9 @@
         layer1 {
             display-name = "ARROW";
             bindings = <
-&trans      &none           &kp HOME        &kp UP          &kp END          &none     &none     &kp C_VOL_DN     &kp C_VOL_UP   &kp C_MUTE     &none     &none    &none
-&trans      &none           &kp LEFT        &kp DOWN        &kp RIGHT        &none     &none     &kp LSHFT        &kp LGUI       &kp LALT       &LCTRL    &none
-&trans      &none           &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(LS(N5))   &none     &none     &kp LG(MINUS)    &kp LG(EQUAL)  &none          &none     &none
+&trans      &none           &kp HOME        &kp UP          &kp END          &none     &none     &kp C_VOL_DN     &kp C_VOL_UP   &kp C_MUTE  &none      &none    &none
+&trans      &none           &kp LEFT        &kp DOWN        &kp RIGHT        &none     &none     &kp LSHFT        &kp LGUI       &kp LALT    &kp LCTRL  &none
+&trans      &none           &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(LS(N5))   &none     &none     &kp LG(MINUS)    &kp LG(EQUAL)  &none       &none      &none
             &trans          &trans          &mo 1                 &kp LG(SPACE)            &trans         &trans
             >;
         };
