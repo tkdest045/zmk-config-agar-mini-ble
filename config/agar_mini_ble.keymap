@@ -107,7 +107,7 @@
             bindings = <&kp LSHIFT>;
             key-positions = <39 40>;
             layers = <0>;
-        }
+        };
     };
 
     keymap {
@@ -129,7 +129,7 @@
 &trans      &none           &kp HOME        &kp UP          &kp END          &none     &none         &kp C_VOL_DN     &kp C_VOL_UP   &kp C_MUTE  &none      &none    &none
 &trans      &none           &kp LEFT        &kp DOWN        &kp RIGHT        &none     &kp LS(LALT)  &kp LSHIFT       &kp LGUI       &kp LALT    &kp LCTRL  &none
 &trans      &none           &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(LS(N5))   &none     &none         &kp LG(MINUS)    &kp LG(EQUAL)  &none       &none      &none
-            &trans          &kp LGUI          &mo 1                 &kp LG(SPACE)            &kp LGUI         &trans
+            &trans          &kp LGUI          &mo 1                 &lt 5 LG(SPACE)            &kp LGUI         &trans
             >;
         };
 
@@ -160,6 +160,16 @@
 &kp LG(TILDE) &kp LG(A)     &kp LG(S)     &kp LG(D)  &kp LG(F)        &kp LG(G)  &kp LG(H)      &kp LG(J)  &kp LG(K)      &kp LG(L)           &kp LG(SEMI)             &kp LG(SQT)
 &kp LSHIFT    &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)        &kp LG(B)  &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)         &kp LG(SLASH)            &kp LSHIFT
                    &kp LCTRL     &mo 4               &kp SPACE        &kp LS(ENTER)             &kp LSHIFT        &kp LALT
+            >;
+        };
+
+        layer5 {
+            display-name = "SHIFT";
+            bindings = <
+&kp GRAVE     &kp LS(Q)     &kp LS(W)     &kp LS(E)  &kp LS(R)    &kp LS(T)  &kp LS(Y)      &kp LS(U)  &kp LS(I)      &kp LS(O)           &kp LS(P)                &kp BSPC           &kp DEL
+&kp TILDE     &kp LS(A)     &kp LS(S)     &kp LS(D)  &kp LS(F)    &kp LS(G)  &kp LS(H)      &kp LS(J)  &kp LS(K)      &kp LS(L)           &kp LS(SEMI)             &kp LS(SQT)
+&kp LSHIFT    &kp LS(Z)     &kp LS(X)     &kp LS(C)  &kp LS(V)    &kp LS(B)  &kp LS(N)      &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)         &kp LS(SLASH)            &kp LSHIFT
+                   &kp none      &none               &mo 5        &mo 5             &none         &none
             >;
         };
     };
