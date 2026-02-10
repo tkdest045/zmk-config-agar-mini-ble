@@ -121,7 +121,7 @@
             display-name = "ARROW";
             bindings = <
 &trans      &none           &kp HOME        &kp UP          &kp END          &none     &none     &kp C_VOL_DN     &kp C_VOL_UP   &kp C_MUTE  &none      &none    &none
-&trans      &none           &kp LEFT        &kp DOWN        &kp RIGHT        &none     &none     &kp LSHFT        &kp LGUI       &kp LALT    &kp LCTRL  &none
+&trans      &none           &kp LEFT        &kp DOWN        &kp RIGHT        &none     &kp      &kp LSHFT        &kp LGUI       &kp LALT    &kp LCTRL  &none
 &trans      &none           &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(LS(N5))   &none     &none     &kp LG(MINUS)    &kp LG(EQUAL)  &none       &none      &none
             &trans          &kp LGUI          &mo 1                 &kp LG(SPACE)            &kp LGUI         &trans
             >;
@@ -140,20 +140,20 @@
         layer3 {
             display-name = "LGUI";
             bindings = <
-&kp ESCAPE &kp LG(Q)      &kp LG(W)     &kp LG(E)  &kp LG(R)        &kp LG(T)  &kp LG(Y)      &kp LG(U)  &kp LG(I)      &kp LG(O)           &kp LG(P)                &kp BSPC           &kp DEL
-&kp TAB     &kp LG(A)     &kp LG(S)     &kp LG(D)  &kp LG(F)        &kp LG(G)  &kp LG(H)      &kp LG(J)  &kp LG(K)      &kp LG(L)           &kp LG(SEMI)             &kp LG(SQT)
-&kp LSHIFT  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)        &kp LG(B)  &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)         &kp LG(SLASH)            &kp LSHIFT
-           &kp LCTRL     &kp LSHIFT         &lt 1 SPACE         &lt 2 ENTER                 &mo 3        &kp LALT
+&kp LG(GRAVE) &kp LG(Q)     &kp LG(W)     &kp LG(E)  &kp LG(R)        &kp LG(T)  &kp LG(Y)      &kp LG(U)  &kp LG(I)      &kp LG(O)           &kp LG(P)                &kp BSPC           &kp DEL
+&kp LG(TILDE) &kp LG(A)     &kp LG(S)     &kp LG(D)  &kp LG(F)        &kp LG(G)  &kp LG(H)      &kp LG(J)  &kp LG(K)      &kp LG(L)           &kp LG(SEMI)             &kp LG(SQT)
+&kp LSHIFT    &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)        &kp LG(B)  &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)         &kp LG(SLASH)            &kp LSHIFT
+                   &kp LCTRL     &kp LSHIFT          &kp SPACE        &kp LS(ENTER)             &mo 3             &kp LALT
             >;
         };
 
         layer4 {
             display-name = "RGUI";
             bindings = <
-&kp ESCAPE &kp LG(Q)      &kp LG(W)     &kp LG(E)  &kp LG(R)        &kp LG(T)  &kp LG(Y)      &kp LG(U)  &kp LG(I)      &kp LG(O)           &kp LG(P)                &kp BSPC           &kp DEL
-&kp TAB     &kp LG(A)     &kp LG(S)     &kp LG(D)  &kp LG(F)        &kp LG(G)  &kp LG(H)      &kp LG(J)  &kp LG(K)      &kp LG(L)           &kp LG(SEMI)             &kp LG(SQT)
-&kp LSHIFT  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)        &kp LG(B)  &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)         &kp LG(SLASH)            &kp LSHIFT
-            &kp LCTRL     &mo 4         &lt 1 SPACE         &lt 2 ENTER                 &kp LSHIFT        &kp LALT
+&kp LG(GRAVE) &kp LG(Q)     &kp LG(W)     &kp LG(E)  &kp LG(R)        &kp LG(T)  &kp LG(Y)      &kp LG(U)  &kp LG(I)      &kp LG(O)           &kp LG(P)                &kp BSPC           &kp DEL
+&kp LG(TILDE) &kp LG(A)     &kp LG(S)     &kp LG(D)  &kp LG(F)        &kp LG(G)  &kp LG(H)      &kp LG(J)  &kp LG(K)      &kp LG(L)           &kp LG(SEMI)             &kp LG(SQT)
+&kp LSHIFT    &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)        &kp LG(B)  &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)         &kp LG(SLASH)            &kp LSHIFT
+                   &kp LCTRL     &mo 4               &kp SPACE        &kp LS(ENTER)             &kp LSHIFT        &kp LALT
             >;
         };
     };
