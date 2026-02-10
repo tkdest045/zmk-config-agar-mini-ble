@@ -110,10 +110,10 @@
         default_layer {
             display-name = "BASE";
             bindings = <
-&kp ESCAPE &kp Q      &kp W     &kp E  &kp R        &kp T  &kp Y      &kp U  &kp I      &kp O           &kp P                &kp BSPC           &kp DEL
-&kp TAB    &kp A      &kp S     &kp D  &kp F        &kp G  &kp H      &kp J  &kp K      &kp L           &kp SEMI             &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C  &kp V        &kp B  &kp N      &kp M  &kp COMMA  &kp DOT         &kp SLASH            &mt LSHFT SLASH
-           &kp LCTRL   &kp LGUI         &lt 1 SPACE         &lt 2 ENTER                 &kp LGUI        &kp LALT
+&kp ESCAPE  &kp Q      &kp W     &kp E  &kp R        &kp T  &kp Y      &kp U  &kp I      &kp O           &kp P                &kp BSPC           &kp DEL
+&kp TAB     &kp A      &kp S     &kp D  &kp F        &kp G  &kp H      &kp J  &kp K      &kp L           &kp SEMI             &kp SQT
+&kp LSHIFT  &kp Z      &kp X     &kp C  &kp V        &kp B  &kp N      &kp M  &kp COMMA  &kp DOT         &kp SLASH            &kp LSHIFT
+           &kp LCTRL   &mo 4         &lt 1 SPACE         &lt 2 ENTER                  &mo 3        &kp LALT
             >;
         };
 
@@ -123,7 +123,7 @@
 &trans      &none           &kp HOME        &kp UP          &kp END          &none     &none     &kp C_VOL_DN     &kp C_VOL_UP   &kp C_MUTE  &none      &none    &none
 &trans      &none           &kp LEFT        &kp DOWN        &kp RIGHT        &none     &none     &kp LSHFT        &kp LGUI       &kp LALT    &kp LCTRL  &none
 &trans      &none           &kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(LS(N5))   &none     &none     &kp LG(MINUS)    &kp LG(EQUAL)  &none       &none      &none
-            &trans          &trans          &mo 1                 &kp LG(SPACE)            &trans         &trans
+            &trans          &kp LGUI          &mo 1                 &kp LG(SPACE)            &kp LGUI         &trans
             >;
         };
 
@@ -133,9 +133,28 @@
 &kp GRAVE     &kp EXCL         &kp AT          &kp HASH      &kp DLLR       &kp PRCNT    &kp CARET    &kp AMPS         &kp STAR    &kp LPAR    &kp RPAR    &trans    &trans
 &kp TILDE     &kp N1           &kp N2          &kp N3        &kp N4         &kp N5       &kp TILDE    &kp MINUS        &kp EQUAL   &kp LBKT    &kp RBKT    &kp BACKSLASH
 &kp CAPSLOCK  &kp N6           &kp N7          &kp N8        &kp N9         &kp N0       &kp GRAVE    &kp UNDERSCORE   &kp PLUS    &kp LBRC    &kp RBRC    &kp LS(BACKSLASH)
-              &trans           &trans                    &kp SPACE          &mo 2                     &trans           &trans
+              &trans           &kp LGUI                    &kp SPACE          &mo 2                     &kp LGUI           &trans
             >;
         };
 
+        layer3 {
+            display-name = "LGUI";
+            bindings = <
+&kp ESCAPE &kp LG(Q)      &kp LG(W)     &kp LG(E)  &kp LG(R)        &kp LG(T)  &kp LG(Y)      &kp LG(U)  &kp LG(I)      &kp LG(O)           &kp LG(P)                &kp BSPC           &kp DEL
+&kp TAB     &kp LG(A)     &kp LG(S)     &kp LG(D)  &kp LG(F)        &kp LG(G)  &kp LG(H)      &kp LG(J)  &kp LG(K)      &kp LG(L)           &kp LG(SEMI)             &kp LG(SQT)
+&kp LSHIFT  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)        &kp LG(B)  &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)         &kp LG(SLASH)            &kp LSHIFT
+           &kp LCTRL     &kp LSHIFT         &lt 1 SPACE         &lt 2 ENTER                 &mo 3        &kp LALT
+            >;
+        };
+
+        layer4 {
+            display-name = "RGUI";
+            bindings = <
+&kp ESCAPE &kp LG(Q)      &kp LG(W)     &kp LG(E)  &kp LG(R)        &kp LG(T)  &kp LG(Y)      &kp LG(U)  &kp LG(I)      &kp LG(O)           &kp LG(P)                &kp BSPC           &kp DEL
+&kp TAB     &kp LG(A)     &kp LG(S)     &kp LG(D)  &kp LG(F)        &kp LG(G)  &kp LG(H)      &kp LG(J)  &kp LG(K)      &kp LG(L)           &kp LG(SEMI)             &kp LG(SQT)
+&kp LSHIFT  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)        &kp LG(B)  &kp LG(N)      &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)         &kp LG(SLASH)            &kp LSHIFT
+            &kp LCTRL     &mo 4         &lt 1 SPACE         &lt 2 ENTER                 &kp LSHIFT        &kp LALT
+            >;
+        };
     };
 };
