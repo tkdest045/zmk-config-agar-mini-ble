@@ -43,66 +43,6 @@
             layers = <2>;
         };
 
-        n0_combo {
-            bindings = <&kp N0>;
-            key-positions = <25 26>;
-            layers = <0>;
-        };
-
-        n1_combo {
-            bindings = <&kp N1>;
-            key-positions = <26 27>;
-            layers = <0>;
-        };
-
-        n2_combo {
-            bindings = <&kp N2>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-
-        n3_combo {
-            bindings = <&kp N3>;
-            key-positions = <28 29>;
-            layers = <0>;
-        };
-
-        n4_combo {
-            bindings = <&kp N4>;
-            key-positions = <14 15>;
-            layers = <0>;
-        };
-
-        n5_combo {
-            bindings = <&kp N5>;
-            key-positions = <15 16>;
-            layers = <0>;
-        };
-
-        n6_combo {
-            bindings = <&kp N6>;
-            key-positions = <16 17>;
-            layers = <0>;
-        };
-
-        n7_combo {
-            bindings = <&kp N7>;
-            key-positions = <1 2>;
-            layers = <0>;
-        };
-
-        n8_combo {
-            bindings = <&kp N8>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        n9_combo {
-            bindings = <&kp N9>;
-            key-positions = <3 4>;
-            layers = <0>;
-        };
-
         shift_combo {
             bindings = <&kp LSHIFT>;
             key-positions = <39 40>;
